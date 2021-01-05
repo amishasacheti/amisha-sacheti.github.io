@@ -1,0 +1,54 @@
+<div class="main-page container-fluid">
+  <div class="row main-page-row">
+    <div class="main-page-left-section col-3">
+      <div class="left-section-header d-flex justify-content-center mt-4">
+        <div class="header-logo">
+          <img src="/assets/img/logo.svg" height="57.5" width="50"/>
+        </div>
+        <div class="seperator mx-3"></div>
+        <div class="header-name d-flex align-items-center">
+          <span class="first-name"> {{ userData.landing_page.name.first_name | uppercase }} </span>
+        </div>
+      </div>
+      <div class="left-section-content d-flex align-items-end justify-content-center">
+        <div class="content-contact-details">
+          <div class="contact-email mb-5">
+            <span class="email-heading d-block mb-1"> Email </span>
+            <span class="email-address"> {{ userData.contacts.email }} </span>
+          </div>
+          <div class="contact-social-networks">
+            <span class="social-networks-heading"> Social Network </span>
+            <div class="social-networks mt-3">
+              <span class="social-network-links mr-4" *ngFor="let link of userData.contacts.social_links">
+                <a [href]="link.url">
+                  <i [class]="link.icon" class="fa-2x"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-page-right-section px-0 col-9">
+      <div class="right-section-header position-absolute">
+        <div class="header-navbar d-flex">
+          <div class="navbar-links mr-5" *ngFor="let link of userData.landing_page.profile_sections; let i=index">
+            <a *ngIf="i!=0" (click)="showPage(link.name)"> {{ link.name }} </a>
+          </div>
+        </div>
+      </div>
+      <div class="right-section-carousel-control position-absolute">
+        <div class="carousel-control-container mr-5">
+          <div class="carousel-controllers mb-4" *ngFor="let section of userData.landing_page.profile_sections">
+          </div>
+        </div>
+      </div>
+      <div class="right-section-content">
+        <app-landingpage *ngIf="pageNumber==0" [userData]="userData.landing_page"></app-landingpage>
+        <app-about *ngIf="pageNumber==1" [userData]="userData.about_me"></app-about>
+        <app-projects *ngIf="pageNumber==2" [userData]="userData.projects"></app-projects>
+        <app-contacts *ngIf="pageNumber==3" [userData]="userData.contacts"></app-contacts>
+      </div>
+    </div>
+  </div>
+</div>

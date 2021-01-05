@@ -1,0 +1,60 @@
+<div class="about-component container-fluid px-0">
+    <div class="about-container">
+        <div class="about-heading">
+            <span class="about"> ABOUT </span>
+        </div>
+        <div class="about-content mt-4">
+            <span class="about-description-container" *ngFor="let description of userData.aboutme_description">
+                <p class="box about-description"> {{ description }} </p>
+            </span>
+        </div>
+        <div class="education-and-skills-container mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <div class="education-container">
+                        <div class="education-heading">
+                            <span class="education"> EDUCATION </span>
+                        </div>
+                        <div class="education-details mt-2">
+                            <div class="education" *ngFor="let education of userData.educations">
+                                <div class="education-card my-3 pt-4 pl-4 pb-4">
+                                    <div class="education-course">
+                                        <span> {{ education.degree }} </span>
+                                        <span> ({{ education.stream }}) </span>
+                                    </div>
+                                    <div class="education-school mt-3">
+                                        <span> {{ education.school | uppercase }} </span>
+                                    </div>
+                                    <div class="education-batch mt-2">
+                                        <span> Batch: 
+                                            <span> {{ education.batch }} </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="skills-container">
+                        <div class="skills-heading">
+                            <span class="skills"> SKILLS </span>
+                        </div>
+                        <div class="skills-details mt-2">
+                            <table>
+                                <tr class="skill-card" *ngFor="let skill of userData.skills">
+                                    <td class="skill-name py-2"> {{ skill.technology | uppercase }} </td>
+                                    <td class="skill-proficiency py-2 px-4">
+                                        <div class="progress">
+                                            <div class="progress-bar skill-progress" [style.width]="20 * skill.proficiency + '%'"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="landing-page-component container-fluid">
+    <div class="row main-row">
+        <div class="col-6 landing-page-left-section px-0">
+            <div class="left-section-half-background"></div>
+            <div class="left-section-my-image d-flex justify-content-center">
+                <img class="my-image" src="/assets/img/amisha.PNG"/>
+            </div>
+        </div>
+        <div class="col-6 landing-page-right-section px-0">
+            <div class="right-section-content d-flex align-items-center">
+                <div class="content-container">
+                    <div class="right-section-name-holder">
+                        <span class="first-name"> {{ userData.name.first_name | uppercase }} </span>
+                        <span class="last-name d-block"> {{ userData.name.last_name | uppercase }} </span>
+                    </div>
+                    <div class="right-section-profession-holder mt-4">
+                        <span class="profession"> {{ userData.profession | uppercase }} </span>
+                    </div>
+                    <div class="right-section-profession-description-holder mt-5">
+                        <pre class="box profession-description"> {{ userData.profession_description }} </pre>
+                    </div>
+                    <div class="right-section-getintouch-button mt-5">
+                        <button class="getintouch-button px-5 py-4 mt-5"> GET IN TOUCH </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

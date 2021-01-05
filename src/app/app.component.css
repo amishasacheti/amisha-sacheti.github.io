@@ -1,0 +1,67 @@
+div {
+    font-family: 'Poppins', sans-serif;
+}
+.main-page, .main-page-row {
+    height: 100%;
+}
+.main-page-left-section {
+    background: #e7814b;
+    color: #fff;
+}
+.seperator {
+    border-right: solid 2px #2a1910;
+}
+.first-name {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.left-section-content {
+    height: 82%;
+}
+.email-heading, .social-networks-heading {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.email-address {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+.social-network-links a:hover, .social-network-links a:visited, .social-network-links a:active {
+    color: #fff;
+}
+.right-section-header, .right-section-carousel-control {
+    right: 5%;
+    z-index: 100;
+}
+.header-navbar {
+    margin-top: 32px;
+}
+.right-section-carousel-control {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-links a {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #2a1910;
+}
+.navbar-links a:hover {
+    cursor: pointer;
+}
+.navbar-links a:hover, .navbar-links a:active {
+    border-bottom: solid 5px #9e6119;
+}
+.carousel-controllers {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fae3d7;
+}
+.right-section-content {
+    height: 100%;
+}

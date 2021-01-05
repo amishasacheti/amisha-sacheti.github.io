@@ -1,0 +1,130 @@
+{
+    "landing_page": {
+        "logo": "",
+        "name": {
+            "first_name": "Amisha",
+            "last_name": "Sacheti"
+        },
+        "image": "",
+        "profession": "Web Developer",
+        "profession_description": "I'm Amisha Sacheti, Web Developer \n with 1 year of experience.",
+        "profile_sections": [
+            {
+                "name": "Landing Page",
+                "url": ""
+            },
+            {
+                "name": "About",
+                "url": ""
+            },
+            {
+                "name": "Experience",
+                "url": ""
+            },
+            {
+                "name": "Projects",
+                "url": ""
+            },
+            {
+                "name": "Contacts",
+                "url": ""
+            }
+        ]
+    },
+    "about_me": {
+        "aboutme_description": [
+            "I'm Amisha Sacheti, a Web Developer based in Rajasthan, India. I'm 24 years \n old and I have 1 year experience in developing web applications.",
+            "I enjoy designing and building web and mobile based applications. My goal \n is to build products that provide the best experience."
+        ],
+        "educations": [
+            {
+                "degree": "B.Tech",
+                "stream": "ECE",
+                "school": "Jaypee Institute of Technology",
+                "batch": "2016-2020"
+            },
+            {
+                "degree": "B.Tech",
+                "stream": "ECE",
+                "school": "Jaypee Institute of Technology",
+                "batch": "2016-2020"
+            }
+        ],
+        "skills": [
+            {
+                "technology": "HTML & CSS",
+                "proficiency": "5"
+            },
+            {
+                "technology": "Angular",
+                "proficiency": "4"
+            },
+            {
+                "technology": "Typescript",
+                "proficiency": "2.5"
+            },
+            {
+                "technology": "Javascript",
+                "proficiency": "3.5"
+            },
+            {
+                "technology": "Java",
+                "proficiency": "3"
+            },
+            {
+                "technology": "Spring Boot",
+                "proficiency": "4"
+            },
+            {
+                "technology": "Spring Microservices",
+                "proficiency": "4.5"
+            },
+            {
+                "technology": "Kubernetes",
+                "proficiency": "3.5"
+            }
+        ]
+    },
+    "projects": [
+        [
+            {
+                "project_name": "EKart - ECommerce Application",
+                "project_short_description": "An ECommerce Application where customers can order stuff.",
+                "project_url": ""
+            },
+            {
+                "project_name": "EKart - ECommerce Application",
+                "project_short_description": "An ECommerce Application where customers can order stuff.",
+                "project_url": ""
+            }
+        ],
+        [
+            {
+                "project_name": "EKart - ECommerce Application",
+                "project_short_description": "An ECommerce Application where customers can order stuff.",
+                "project_url": ""
+            },
+            {
+                "project_name": "EKart - ECommerce Application",
+                "project_short_description": "An ECommerce Application where customers can order stuff.",
+                "project_url": ""
+            }
+        ]
+    ],
+    "contacts": {
+        "email": "amishajuly@gmail.com",
+        "location": "Alwar, Rajasthan, India",
+        "social_links": [
+            {
+                "name": "LinkedIn Profile",
+                "icon": "fa fa-linkedin",
+                "url": "https://www.linkedin.com/in/amisha-sacheti/"
+            },
+            {
+                "name": "GitHub Profile",
+                "icon": "fa fa-github",
+                "url": "https://github.com/amishasacheti"
+            }
+        ]
+    }
+}

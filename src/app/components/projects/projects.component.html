@@ -1,0 +1,36 @@
+<div class="projects-component container-fluid px-0">
+    <div class="projects-container">
+        <div class="projects-heading">
+            <span class="projects"> PROJECTS </span>
+        </div>
+        <div class="projects-content mt-4">
+            <div class="project-array" *ngFor="let project of userData">
+                <div class="row ml-1">
+                    <div class="col-5 project-card p-4 py-5 my-3 mr-4">
+                        <div class="project-heading">
+                            <span> {{ project[0].project_name | uppercase }} </span>
+                        </div>
+                        <div class="project-description mt-3">
+                            <p> {{ project[0].project_short_description }} </p>
+                        </div>
+                    </div>
+                    <div class="col-5 project-card p-4 py-5 my-3">
+                        <div class="project-heading">
+                            <span> {{ project[1].project_name | uppercase }} </span>
+                        </div>
+                        <div class="project-description mt-3">
+                            <p> {{ project[1].project_short_description }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-footer mt-5">
+            <div class="row">
+                <div class="col-11 px-0 more-projects-button-container d-flex justify-content-center">
+                    <button class="more-projects-button py-4 px-5"> MORE PROJECTS </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

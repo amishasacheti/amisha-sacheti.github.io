@@ -1,0 +1,64 @@
+.about-component {
+    height: 100%;
+}
+.about-container {
+    padding-top: 90px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+.about, .education, .skills {
+    color:#2a1910;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.about-description {
+    font-family: 'Poppins', sans-serif;
+    color: #2a1910;
+    font-size: 25px; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+.education-card {
+    border: solid 3px #f5f5f5;
+    width: 80%;
+}
+.education-course {
+    color: #2a1910;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.education-school {
+    color: #666261;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.education-batch {
+    color: #666261;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.skill-card {
+    height: 40px;
+}
+.skill-name {
+    color: #666261;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.skill-proficiency {
+    width: 100%;
+}
+.progress {
+    border-radius: 2;
+    height: 10px;
+    background-color: #fae3d7;
+}
+.skill-progress {
+    background-color: #e7814b;
+}

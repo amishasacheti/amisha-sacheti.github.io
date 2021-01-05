@@ -1,0 +1,47 @@
+.landing-page-component, .main-row, .right-section-content {
+    height: 100%;
+}
+.left-section-half-background {
+    height: 100%;
+    width: 50%;
+    z-index: -100;
+    background: #e7814b;
+}
+.left-section-my-image {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.my-image {
+    border: solid 1px #b1b1b1;
+    height: 90%;
+    width: 90%;
+}
+.first-name, .last-name {
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #2a1910;
+}
+.profession {
+    font-size: 25px;
+    font-weight: 600;
+    color: #9e6119;
+    letter-spacing: 1px;
+}
+.profession-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #2a1910;
+    letter-spacing: 1px;
+}
+.getintouch-button {
+    background: #e7814b;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
